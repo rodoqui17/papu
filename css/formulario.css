@@ -1,0 +1,209 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+}
+
+p {
+  color: #999;
+}
+
+strong {
+  color: #333;
+}
+
+#wrapper {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.page-head-image {
+  
+}
+
+.page-head-image img {
+  /*border-radius: 50%;*/
+}
+
+#form-trabalhe {
+  margin-top: 30px;
+  text-align: left;
+}
+
+label {
+  font-weight: normal;
+  margin-top: 15px;
+}
+
+input {
+  border: 2px solid #CCC !important;
+  height: 35px;
+  border-radius: 3px;
+  max-width: 100%;
+}
+
+.input-group-addon {
+  border: 2px solid #CCC !important;
+  border-right: 0px !important;
+}
+
+.btn {
+  border: 0;
+  border-radius: 3px;
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+
+/*-----------------------*/
+
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+/* Month header */
+.month {
+    padding: 20px 25px;
+    width: 100%;
+    background: #428bca;
+}
+
+/* Month list */
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+    margin: 0;
+    padding: 4px 0;
+    background-color:#ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 12.8%;
+    color: #666;
+    text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+    padding: 5px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.5%;
+    text-align: center;
+    margin-bottom: 2px;
+    font-size:12px;
+    color:#777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+    border-radius: 100%;
+    padding: 5px;
+    background: #428bca;
+    color: white !important
+    
+
+}
+
+.center{
+  text-align: center;
+}
+
+.navbar h3 {
+  color: #f5f5f5;
+  margin-top: 14px;
+}
+.hljs-pre {
+  background: #f8f8f8;
+  padding: 3px;
+}
+.footer {
+  border-top: 1px solid #eee;
+  margin-top: 40px;
+  padding: 40px 0;
+}
+/*.input-group {
+  width: 110px;
+  margin-bottom: 10px;
+}*/
+.pull-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+@media (max-width: 767px) {
+  .pull-center {
+    float: right;
+  }
+}
+
+.uno {
+   position: absolute;
+   z-index:0;
+}
+
+.dos {
+  color: white;
+  background-color: black;
+  margin: 10px;
+  width: 150px;
+  height: 70px;
+  display: inline-block;
+}
+.tres {
+  color: white;
+  background-color: brown;
+  margin: 10px;
+  width: 75px;
+}
+.cuatro {
+  color: white;
+  background-color: brown;
+  margin: 10px;
+  width: 100px;
+}
+
+.cinco {
+  background-color: brown;
+}

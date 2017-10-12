@@ -1,0 +1,172 @@
+
+<html ng-app="pruebaApp">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+ -->
+    <link rel="stylesheet" href="css/formulario.css">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="js/angular.min.js"></script>
+  </head>
+  <body ng-controller="pruebaAppCtrl">
+ 
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mod.js"></script>
+
+ 
+  <!-- Image and text -->
+<nav class="navbar navbar-light bg-primary">
+    <a class="navbar-brand" href="/papu">
+    <img src="img/icons8-Start Menu-100.png" width="30" height="30" class="d-inline-block align-left" alt="">
+
+    <!-- <p><button type="button" class="btn btn-primary" ng-clik="inicio()">inicio</button></p> -->
+  </a>
+</nav>
+
+</div >
+    <div id="wrapper" class="container">
+  
+  <figure class="page-head-image">
+    <img src="img/fmail.png" />
+  </figure>
+  
+  <h1>Solicita un servicio</h1>
+  <p>Encuentra el cuidador ideal el momento que más lo necesites</p>
+  <!-- <p><strong>Send your personal info to:</strong> <a href="mailto:workwithus@gmail.com">workwithus@gmail.com</a></p> -->
+
+    <form id="form-work" class="" name="form-work" action="/papu">
+      
+      <fieldset>
+      
+        <div class="form-group">
+          <div class="col-md-12">
+            <label class="control-label" for="nome">Nombre</label>
+            <input name="nome" class="form-control" placeholder="Juan" type="text" ng-model="nombre" ng-required="required">
+            </div>
+          </div>
+<!-- {{nn}} -->
+        <div class="form-group">
+            <div class="col-md-6">
+              <label class="control-label" for="surname">que día inicia el servicio</label>
+              <input name="surname" class="form-control" placeholder="ddd/mm/aaaa" type="date" ng-required="required">
+            </div>
+          </div>
+<div class="form-group">
+            <div class="col-md-6">
+              <label class="control-label" for="surname">que día concluye el servicio</label>
+              <input name="surname" class="form-control" placeholder="dd/mm/aaaa" type="date">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-6">
+              <label class="control-label" for="surname">que hora inicia el servicio</label>
+              <input name="surname" class="form-control" placeholder="hh:mm" type="time" ng-required="required">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-6">
+              <label class="control-label" for="surname">que hora finaliza el servicio</label>
+              <input name="surname" class="form-control" placeholder="hh:mm" type="time" ng-required="required">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-6">
+              <label class="control-label" for="tel">Tel</label>
+              <div class="input-group">
+                <span class="input-group-addon">+02</span>
+                <input name="tel" class="form-control" placeholder="22488805" type="text" ng-required="required">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-md-6">
+              <label class="control-label" for="mobile">Movil</label>
+              <div class="input-group">
+                <span class="input-group-addon">+591</span>
+                <input name="mobile" class="form-control" placeholder="72565858" type="text" ng-required="required">
+              </div>
+            </div>
+          </div>
+
+            <div class="form-group">
+              <div class="col-md-12">
+    <label for="exampleSelect1">Servicio</label>
+    <select class="form-control" id="exampleSelect1" ng-model="servicio" ng-click="especialidad(servicio)">
+      <option>Cuidado de Niños</option>
+      <option>Cuidado de Adultos</option>
+      <option>Cuidado de Mascotas</option>
+      <option>Cuidado Personal</option>
+    </select>
+  </div>
+  </div>
+ <div class="form-group" >
+              <div class="col-md-12">
+    <label for="exampleSelect1"  align="center">{{personas}}</label>
+    <div class="input-group" align="center">
+     <img src="img/icons8-Slide Up-100.png" width="30" height="30" class="d-inline-block align-left" alt="" ng-click="count = count + 1" ng-init="count=0">
+    {{count}}
+     <img src="img/icons8-Down Button-100.png" width="30" height="30" class="d-inline-block align-left" alt="" ng-click="count = count - 1" ng-init="count=0">
+   </div>
+  </div>
+  </div>
+  
+
+ 
+       
+<!-- 
+          <div class="form-group">
+            <div class="col-md-6">
+              <label class="control-label" for="email">Especialidad</label>
+              <input name="email" class="form-control" placeholder="kelly.slater.surf@gmail.com" type="text">
+            </div>
+          </div> -->
+
+          <div class="form-group">
+            <div class="col-md-12">
+              <label class="control-label" for="district">Zona</label>
+              <input name="district" class="form-control" placeholder="Miraflores" type="text" ng-required="required">
+            </div>
+          </div>
+
+           <div class="form-group">
+            <div class="col-md-12">
+              <label class="control-label" for="district">Describe el servicio solicitado</label>
+              <textarea ng-model="desc" class="form-control" ng-maxlength="10" ng-required="required"> </textarea>
+              </div>
+          </div>
+
+        <div class="form-group">
+        
+              <div class="col-md-12">
+    <label for="exampleSelect1">Reservar servicio por: </label>
+    <select class="form-control" id="exampleSelect1" ng-model="forma" ng-click="pago(forma)">
+      <option>Giro Tigo Money</option>
+      <option>Deposito Bancario</option>
+      <option>Pago en Efectivo</option>
+   </select>
+  </div>
+  </div>
+  <p>{{mensajepago}}</p>
+</a>
+          <div class="form-group">
+            <div class="col-md-12">
+              <button type="button" class="btn btn-primary btn-lg btn-block info">Reservar</button>
+            </div>
+          </div>     
+      </fieldset> 
+    </form>
+</div>
+  </body>
+</html>

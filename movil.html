@@ -1,0 +1,144 @@
+
+<! DOCTYPE html>
+<html ng-app="pruebaApp">
+<head>
+<title>serviapp</title>
+<!-- Compiled and minified CSS -->
+<!--   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css"> -->
+
+  <!-- Compiled and minified JavaScript -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script> -->
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<script src="../js/angular.min.js"></script>
+        
+<link href="css/materializec.css" rel="stylesheet" type="text/css"/>
+<!-- Import materialize.css -->
+<link type="text/css" rel="stylesheet" href="css/materializec.css"  media="screen,projection"/>
+<!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+       <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script> -->
+</head>
+<body ng-controller="pruebaAppCtrl">
+<nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Solicitud de servicios</a>
+     <!--  <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a> -->
+         <!--  <ul class="side-nav" id="mobile-demo">
+        <li><a href="sass.html">Productos</a></li>
+        <li><a href="badges.html">Contabilidad</a></li>
+        <li><a href="collapsible.html">Gastos</a></li>
+        <li><a href="mobile.html">Estado</a></li>
+      </ul> -->
+    </div>
+  </nav>
+</nav>
+<div class="formato">
+ <div class="row">
+  <div class="row">
+             
+    <form class="col s12 m12 l12">
+        <div>
+      <label>Nombre:</label>
+      <input type="text" ng-model="yourName" placeholder="" class="active validate" required>
+      
+      <h3>Hola {{yourName}}!</h3>
+    </div>
+<p>Cuentanos mas sobre el servicio que solicitas</p>
+      <div class="row">
+<div class="input field col s12 m12 l1" ><h5>Dias :</h5></div>
+<div class="input-field col s12 m6 l2">
+          <p>Inicio</p>
+          <input placeholder="dd/mm/aaaa" ng-model="diai" type="date" class="active validate" required>
+          
+        </div>
+        <div class="input-field col s12 m6 l2">
+          <p>Fin</p>
+          <input placeholder="dd/mm/aaaa" ng-model="diaf" type="date" class="active validate" required>
+          
+        </div>
+        <div class="input field col s12 m12 l1" ><h5>Horas :</h5></div>
+        <div class="input-field col s12 m6 l1">
+          <p>Inicio</p>
+          <input placeholder="hh:mm" id="horai" type="time" class="active validate" required>
+          
+        </div>
+        <div class="input-field col s12 m6 l1">
+          <p>Fin</p>
+          <input placeholder="hh:mm" id="horaf" type="time" data-error="wrong" data-success="right" class="active validate" required>
+
+        </div>
+        </div>  
+        <div class="row">
+          <div class="input field col s12 m2 l1 "><h5>Zona :</h5></div>     
+        <div class="input-field col s12 m4 l2">
+            <select name="zonas">
+  <option value="sp">San Pedro</option>
+  <option value="so">Sopocachi</option>
+  <option value="sur">Sur</option>
+  <option value="per">Periferica</option>
+  <option value="mp">Max Paredes</option>
+</select>
+</div>
+          
+       
+        <div class="input field col s12 m2 l1"><h5>Niños :</h5></div>
+        <div class="input-field col s12 m4 l2">
+        <select name="zonas">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+</select>
+  </div> 
+  <div class="input field col s12 m4 l2"><h5>Especialidad :</h5></div>
+        <div class="input-field col s12 m8 l2">
+        <select name="zonas">
+  <option value="1">Ninguna</option>
+  <option value="2">Cuidados Especiales</option>
+  <option value="4">Fisioterapias</option>
+  <option value="4">Otras patologías</option>
+  
+</select>
+  
+  </div>    
+</div>  
+   <div class="row">
+      <div class="input field col s12 m4 l2"><h5>Descripción :</h5></div>
+    <form class="col s12 m10" >
+      <div class="row">
+        <div class="input-field col s12 m8 l10 ">
+          <textarea id="textarea1" class="materialize-textarea" ng-model="desc" class="active validate" required ></textarea>
+          <label for="textarea1">Mas detalles</label>
+        </div>
+      </div>
+    </form>
+  </div>  
+     <p class="alerta" align="center">{{result}}</p>
+  <div class="input-field col s12 m12" align="center"><a class="waves-effect waves-light btn-large" ng-click="buscar(diai)"> Buscar</a></div>        
+     
+ <br>
+   
+         
+   
+  
+    </form>
+
+  
+
+
+   
+     
+   
+
+</div>
+</div>
+<script src="js/mod.js"></script>
+   <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    
+</body>
+</html>

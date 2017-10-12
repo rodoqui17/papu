@@ -1,0 +1,205 @@
+
+<html ng-app="pruebaApp">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+ -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+  <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">  
+  <style type="text/css">
+    body {padding-top:20px;}
+  </style>
+
+<!-- <link rel="stylesheet" type="text/css" href="reloj/assets/css/bootstrap.min.css"> -->
+<link rel="stylesheet" type="text/css" href="reloj/dist/bootstrap-clockpicker.min.css">
+<link rel="stylesheet" type="text/css" href="reloj/assets/css/github.min.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/mod2.js"></script>
+  </head>
+  <body ng-controller="pruebaAppCtrl">
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+
+  <!-- Image and text -->
+<nav class="navbar navbar-light bg-primary">
+    <a class="navbar-brand" href="/movil.html">
+    <img src="img/icons8-Start Menu-100.png" width="30" height="30" class="d-inline-block align-left" alt="">
+
+    <!-- <p><button type="button" class="btn btn-primary" ng-clik="inicio()">inicio</button></p> -->
+  </a>
+</nav>
+
+</div >
+    <div id="wrapper" class="container">
+  
+  <figure class="page-head-image">
+    <img src="img/fmail.png" />
+  </figure>
+  
+  <h1>Solicita un servicio</h1>
+  <p>Encuentra el cuidador ideal el momento que más lo necesites</p>
+  <!-- <p><strong>Send your personal info to:</strong> <a href="mailto:workwithus@gmail.com">workwithus@gmail.com</a></p> -->
+
+    <form id="form-work" class="" name="form-work" action='#cuidadores'>
+      
+      <fieldset>
+      
+        <div class="form-group" ng-init="marcadia()">
+              <div class="col-md-12">
+                <div class="well well-sm">
+                
+                <fieldset>
+    <legend class="text-center">¿Que servicio buscas?</legend>
+    <select class="form-control" id="exampleSelect1" ng-model="servicio" >
+
+      <option ng-click="especialidad(servicio)">Cuidado de Mascotas</option>
+      <option ng-click="especialidad(servicio)">Cuidado de Adultos</option>
+      <option ng-click="especialidad(servicio)">Cuidado de Niños</option>
+      <option ng-click="especialidad(servicio)">Fisioterapia</option>
+      <option ng-click="especialidad(servicio)">Belleza</option>
+
+      
+
+    </select>
+    </fieldset>
+
+  </div>
+  </div>
+    </div>
+
+  
+ <div class="form-group" >
+                  <div class="col-md-6">
+    <div class="well well-sm">
+                    <fieldset>
+            <legend class="text-center">¿Día?</legend>
+    <div align="center">
+    <img src="img/icons8-Slide Up-100.png" width="50" height="50"   ng-click="count = count + 1" ng-init="count = 0">
+    <h1>{{count}}</h1>
+    {{yyyy}}
+     <img src="img/icons8-Down Button-100.png" width="50" height="50"  ng-click="count = count - 1" ng-init="count=0">
+
+     </div>
+   </fieldset>
+
+</div>
+  
+  </div>
+  </div>
+  
+   <div class="form-group" >
+                  <div class="col-md-6">
+    <div class="well well-sm">
+          
+          <fieldset>
+            <legend class="text-center">¿Hora?</legend>
+    <div align="center">
+    <img src="img/icons8-Slide Up-100.png" width="50" height="50"   ng-click="counta = counta + 1" ng-init="counta=0">
+    <h1>{{counta}}:00</h1>
+    {{yyyy}}
+     <img src="img/icons8-Down Button-100.png" width="50" height="50"  ng-click="counta = counta - 1" ng-init="counta=0">
+
+     </div>
+   </fieldset>
+
+</div>
+    </div>
+  </div>
+  
+
+ 
+       
+<!-- 
+          <div class="form-group">
+            <div class="col-md-6">
+              <label class="control-label" for="email">Especialidad</label>
+              <input name="email" class="form-control" placeholder="kelly.slater.surf@gmail.com" type="text">
+            </div>
+          </div> -->
+
+          <div class="form-group">
+            <div class="col-md-12">
+              <div class="well well-sm">
+         
+          <fieldset>
+            <legend class="text-center">¿Zona?</legend>
+                <select class="form-control" id="exampleSelect1" ng-model="servicio" >
+
+      <option ng-click="especialidad(servicio)">Centro</option>
+      <option ng-click="especialidad(servicio)">Miraflores</option>
+      <option ng-click="especialidad(servicio)">Obrajes</option>
+      <option ng-click="especialidad(servicio)">Calacoto</option>
+      <option ng-click="especialidad(servicio)">San Pedro</option>
+
+      
+
+    </select>
+            </fieldset>
+          
+          </div>
+
+            </div>
+          </div> 
+  <div class="form-group">
+            <div class="col-md-12">
+              <a type="button" class="btn btn-primary btn-lg btn-block info" ng-click='buscar()' href="#cuidadores">Buscar</a>
+                
+            </div>
+          </div> 
+          
+          </form>
+            
+</div>
+
+  <div id = "cuidadores" class="form-group" style="visibility:{{prop}};" ng-repeat="x in datainfo">
+    <div class="col-md-3" >
+  <a href="#" class="thumb pull-right">
+    <img src="{{x.imag}}" class="img-circle" class="img-responsive"></a>
+      <br>
+       <div class="alert alert-info"><h3>{{x.nombre}}</h3>
+<hr>
+       <h2>{{x.especialidad}}</h2><h4>Egresada del Instituto Balager</h4>
+<hr>
+       <span>Edad: 22 años</span>
+       <br>
+       <span>Horarios Disponibles: 9:00 a.m. - 15:00 p.m.</span>
+       <br>
+       <span>Puntuación: <span class="label label-info">{{x.calificacion}}/10 pts.</span></span>
+       <br>
+        <h3>
+         <span  class="label label-success">Costo: {{x.costo}} Bs./{{x.tipocosto}}</span>
+       </h3>
+
+<hr>
+        <div class="btn-group">
+          <a type="button" class="btn btn-primary dropdown-toggle" href="/{{x.link}}">
+          Ver Perfil </a>
+           
+        </div>
+      </div>
+  </div>
+  </div>
+  
+  
+  
+
+   
+<script type="text/javascript" src="reloj/assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="reloj/assets/js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+    
+<!-- aqui date -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+   
+  </body>
+</html>
